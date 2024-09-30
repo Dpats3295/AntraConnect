@@ -1,1 +1,31 @@
-<p>login works!</p>
+<div class="login-container">
+    <h2>AntraConnect</h2>
+    
+    <!-- Username Input -->
+    <div class="form-group">
+      <label for="username">Username</label>
+      <input type="text" id="username" [(ngModel)]="username" class="form-control" placeholder="Enter username" required>
+    </div>
+  
+    <!-- Password Input -->
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input type="password" id="password" [(ngModel)]="password" class="form-control" placeholder="Enter password" required>
+    </div>
+  
+    <!-- Forgot Password Link -->
+    <div class="form-group forgot-password">
+      <a routerLink="/auth/forgot-password">Forgot Password?</a>
+    </div>
+  
+    <!-- Sign In Button -->
+    <div class="form-group">
+      <button class="btn btn-login" (click)="onLogin()">Sign In</button>
+    </div>
+  
+    <!-- Register Button -->
+    <div class="form-group">
+      <button class="btn btn-register" (click)="navigateToRegister()">Register</button>
+    </div>
+</div>
+  
