@@ -6,7 +6,6 @@ import { NewsFeedComponent } from './news-feed/news-feed.component';
 import { StoryPostComponent } from './story-post/story-post.component';
 
 
-
 @NgModule({
   declarations: [
     NewsFeedComponent,
